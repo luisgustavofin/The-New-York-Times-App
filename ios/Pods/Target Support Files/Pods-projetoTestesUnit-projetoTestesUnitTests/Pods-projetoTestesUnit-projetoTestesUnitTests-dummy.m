@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_projetoNewYorkTimes_projetoNewYorkTimesTests : NSObject
+@end
+@implementation PodsDummy_Pods_projetoNewYorkTimes_projetoNewYorkTimesTests
+@end
