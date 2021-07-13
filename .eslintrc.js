@@ -6,7 +6,7 @@ module.exports = {
   ],
   parser: 'babel-eslint',
   rules: {
-    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/prefer-default-export': 'off',
     'dot-notation': 'off',
     'arrow-parens': 'off',
