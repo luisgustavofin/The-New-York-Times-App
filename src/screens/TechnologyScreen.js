@@ -2,7 +2,8 @@ import React from 'react';
 import { View, FlatList } from 'react-native';
 import axios from 'axios';
 import { ItemList, LoadingModal, ErrorModal, ListModal, InstructionsText, StatusBarFunc, SearchButton } from '../components';
-import { Labels, Colors } from '../others';
+import { Labels } from '../others';
+import { Styles } from '../styles/Styles';
 
 export default class TechnologyScreen extends React.Component {
   constructor(props) {
@@ -36,7 +37,7 @@ export default class TechnologyScreen extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1, backgroundColor: Colors.backGroundColor }}>
+      <View style={Styles.container}>
 
         <StatusBarFunc />
 

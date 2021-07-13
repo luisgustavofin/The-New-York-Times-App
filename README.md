@@ -18,6 +18,7 @@ Itens:
 - ✅ React-Navigation (4x)
 - ✅ Axios
 - ✅ Flatlist
+- ✅ StyleSheet
 - ✅ Eslint
 - ✅ Testes Unitários
 

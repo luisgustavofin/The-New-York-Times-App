@@ -1,23 +1,28 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { View, Image } from 'react-native';
+import { Styles } from '../styles';
 
 const ItemListImage = ({ url }) => (
-  <Image
-    style={{ width: 80, height: 80 }}
-    source={{
-      uri: url,
-    }}
-    defaultSource={require('../images/loading-image.png')}
-  />
+  <View style={Styles.area1ItemList}>
+    <Image
+      style={Styles.itemListImage}
+      source={{
+        uri: url,
+      }}
+      defaultSource={require('../images/loading-image.png')}
+    />
+  </View>
 );
 
 const ListModalImage = ({ url }) => (
-  <Image
-    style={{ width: 100, height: 100 }}
-    source={{
-      uri: url,
-    }}
-  />
+  <View style={Styles.boxImageListModal}>
+    <Image
+      style={Styles.listModalImage}
+      source={{
+        uri: url,
+      }}
+    />
+  </View>
 );
 
 export { ItemListImage, ListModalImage };
