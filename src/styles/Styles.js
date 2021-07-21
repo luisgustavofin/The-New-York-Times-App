@@ -2,6 +2,10 @@ import { StyleSheet } from 'react-native';
 import { Colors } from '../others';
 
 const Styles = StyleSheet.create({
+  imageTabNavigator: {
+    width: 30,
+    height: 30
+  },
   container: {
     flex: 1,
     backgroundColor: Colors.backGroundColor
@@ -174,12 +178,45 @@ const Styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center'
   },
+  touchUrlListModal: {
+    flex: 1,
+  },
   genericboxListModal: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   generictextListModal: {
     textAlign: 'center'
+  },
+  searchInput: {
+    fontSize: 16,
+    color: Colors.white,
+    flex: 1,
+    fontWeight: '500',
+  },
+  inputWrapper: {
+    marginVertical: 5,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: Colors.gray333,
+    borderRadius: 50,
+    paddingVertical: 5,
+    paddingRight: 8,
+    maxHeight: 53,
+    width: '90%',
+    marginBottom: 13
+  },
+  lupaTestListComponent: {
+    width: 22,
+    height: 22,
+    marginLeft: 15,
+    marginRight: 10
+  },
+  textInputFlatlist: {
+    flex: 1
+  },
+  boxTextInput: {
+    alignItems: 'center'
   }
 });
 

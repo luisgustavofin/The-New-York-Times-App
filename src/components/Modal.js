@@ -38,14 +38,16 @@ const ErrorModal = ({ error, onPress, visible }) => (
   </Modal>
 );
 
-const ListModal = ({ onPress, data, visible }) => (
+const ListModal = ({ onPress, data, visible, openUrl }) => (
   <Modal animationType="slide" visible={visible} transparent>
     <View style={Styles.containerListModal}>
       <View style={Styles.boxListModal}>
         <ListModalImage url={data.multimedia[0].url} />
         <ListModalText text={data.title} flex={2} fontSize={18} fontWeight="bold" />
         <ListModalText text={data.abstract ? data.abstract : '(no abstract)'} flex={2} fontSize={15} />
-        <ListModalText text={data.url} flex={1} fontSize={10} />
+        <TouchableOpacity style={Styles.touchUrlListModal} onPress={openUrl}>
+          <ListModalText text={data.url} flex={1} fontSize={10} />
+        </TouchableOpacity>
         <TouchableOpacity onPress={onPress} style={Styles.touchListModal}>
           <Text style={Styles.xListModal}>{Labels.x}</Text>
         </TouchableOpacity>
