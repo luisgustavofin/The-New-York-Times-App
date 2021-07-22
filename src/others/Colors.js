@@ -5,7 +5,8 @@ const Colors = {
   white: '#ffffff',
   black: '#000000',
   red: '#e30707',
-  blackOpacity: 'rgba(0,0,0,0.5)'
+  blackOpacity: 'rgba(0,0,0,0.5)',
+  blue: '#001eff'
 };
 
 export { Colors };

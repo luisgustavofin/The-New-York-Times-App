@@ -46,7 +46,7 @@ const ListModal = ({ onPress, data, visible, openUrl }) => (
         <ListModalText text={data.title} flex={2} fontSize={18} fontWeight="bold" />
         <ListModalText text={data.abstract ? data.abstract : '(no abstract)'} flex={2} fontSize={15} />
         <TouchableOpacity style={Styles.touchUrlListModal} onPress={openUrl}>
-          <ListModalText text={data.url} flex={1} fontSize={10} />
+          <ListModalText color={Colors.blue} textDecorationLine="underline" text={data.url} flex={1} fontSize={10} />
         </TouchableOpacity>
         <TouchableOpacity onPress={onPress} style={Styles.touchListModal}>
           <Text style={Styles.xListModal}>{Labels.x}</Text>

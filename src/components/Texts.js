@@ -15,9 +15,9 @@ const LoadingModalText = () => (
   </View>
 );
 
-const ListModalText = ({ text, flex, fontSize, fontWeight }) => (
+const ListModalText = ({ text, flex, fontSize, fontWeight, color, textDecorationLine }) => (
   <View style={[Styles.genericboxListModal, { flex }]}>
-    <Text style={[Styles.generictextListModal, { fontSize, fontWeight }]}>{text}</Text>
+    <Text style={[Styles.generictextListModal, { color, fontSize, fontWeight, textDecorationLine }]}>{text}</Text>
   </View>
 );
 
