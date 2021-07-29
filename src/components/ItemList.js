@@ -6,7 +6,11 @@ import { Styles } from '../styles';
 const ItemList = ({ data, onPress }) => (
   <TouchableOpacity onPress={onPress} style={Styles.touchItemList}>
     <View style={Styles.boxItemList}>
-      <ItemListImage url={data.multimedia[0].url} />
+      <ItemListImage
+        url={data.multimedia
+          ? data.multimedia[0].url
+          : null}
+      />
       <View style={Styles.area2ItemList}>
         <Text style={Styles.textItemList}>{data.title}</Text>
       </View>

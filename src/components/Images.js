@@ -7,7 +7,7 @@ const ItemListImage = ({ url }) => (
     <Image
       style={Styles.itemListImage}
       source={{
-        uri: url,
+        uri: url
       }}
       defaultSource={require('../images/loading-image.png')}
     />
@@ -19,7 +19,7 @@ const ListModalImage = ({ url }) => (
     <Image
       style={Styles.listModalImage}
       source={{
-        uri: url,
+        uri: url
       }}
     />
   </View>

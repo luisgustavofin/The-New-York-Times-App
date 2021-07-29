@@ -42,7 +42,11 @@ const ListModal = ({ onPress, data, visible, openUrl }) => (
   <Modal animationType="slide" visible={visible} transparent>
     <View style={Styles.containerListModal}>
       <View style={Styles.boxListModal}>
-        <ListModalImage url={data.multimedia[0].url} />
+        <ListModalImage
+          url={data.multimedia
+            ? data.multimedia[0].url
+            : null}
+        />
         <ListModalText text={data.title} flex={2} fontSize={18} fontWeight="bold" />
         <ListModalText text={data.abstract ? data.abstract : '(no abstract)'} flex={2} fontSize={15} />
         <TouchableOpacity style={Styles.touchUrlListModal} onPress={openUrl}>
